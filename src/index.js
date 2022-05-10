@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, NavLink, Switch } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
-
+import App from "./components/App"
 
 // define navbar
 
@@ -22,24 +22,6 @@ function About(){
 // Pages defination
 
 
-function App() {
-  return (
-    <>
-    <Navbar />
-    <Switch>
-      <Route exact path='/'>
-        <Home />
-      </Route>
-      <Route exact path='/about'>
-        <About/>
-      </Route >
-      <Route exact path='/login'>
-        <Login />
-      </Route>
-    </Switch>
-  </>
-  );
-}
 
 ReactDOM.render(
   <BrowserRouter>
