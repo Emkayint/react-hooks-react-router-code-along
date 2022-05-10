@@ -1,6 +1,53 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, NavLink, Switch } from "react-router-dom";
+
+const linkStyle = {
+  dislplay : "inline-block",
+  width : '50px',
+  padding : '12px',
+  margin : "0 6px 6px",
+  background : "blue",
+  textDecoration : 'none',
+  color : 'white'
+}
+
+// define navbar
+
+function Navbar(){
+  return (
+    <div>
+      <NavLink 
+        to='/'
+        exact
+        style={linkStyle}
+        activeStyle = {{background : 'darkblue'}}
+      >
+        Home
+      </NavLink>
+
+      {/* for about  */}
+
+      <NavLink 
+        to='/about'
+        exact
+        style={linkStyle}
+        activeStyle = {{background : 'darkblue'}}
+      >
+        About
+      </NavLink>
+
+      <NavLink 
+        to='/login'
+        exact
+        style={linkStyle}
+        activeStyle = {{background : 'darkblue'}}
+      >
+        Login
+      </NavLink>
+    </div>
+  )
+}
 
 function Home() {
   return (
@@ -40,6 +87,8 @@ function Login(){
 function App() {
   return (
     <>
+    <Navbar />
+    <Switch>
       <Route exact path='/'>
         <Home />
       </Route>
@@ -49,6 +98,7 @@ function App() {
       <Route exact path='/login'>
         <Login />
       </Route>
+    </Switch>
   </>
   );
 }
