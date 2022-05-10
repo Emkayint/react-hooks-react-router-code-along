@@ -1,8 +1,7 @@
 import Login from "./Login";
 import Home from "./Home";
 import Navbar from "./Navbar";
-import { Switch } from "react-router-dom";
-import { Switch, Route } from "react-router-dom";
+import { Switch , Route} from "react-router-dom";
 
 function App() {
   return (
