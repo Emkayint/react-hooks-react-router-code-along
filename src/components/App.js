@@ -1,6 +1,7 @@
 import Login from "./Login";
 import Home from "./Home";
 import Navbar from "./Navbar";
+import About from "./About";
 import { Switch , Route} from "react-router-dom";
 
 function App() {
@@ -21,3 +22,5 @@ function App() {
   </>
   );
 }
+
+export default App

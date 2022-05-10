@@ -4,19 +4,6 @@ import { BrowserRouter } from "react-router-dom";
 
 import App from "./components/App"
 
-// define navbar
-
-
-
-
-
-
-
-
-// Pages defination
-
-
-
 ReactDOM.render(
   <BrowserRouter>
     <App />
