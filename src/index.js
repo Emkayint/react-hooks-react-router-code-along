@@ -8,13 +8,7 @@ import { BrowserRouter, Route, NavLink, Switch } from "react-router-dom";
 
 
 
-function Home() {
-  return (
-    <div>
-      <h1>Home!</h1>
-    </div>
-  );
-}
+
 
 function About(){
   return (
